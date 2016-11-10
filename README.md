@@ -17,3 +17,8 @@ For more information on gitattributes: [gitattributes(5)][g5]
 [fk]: http://help.github.com/forking/
 [pr]: http://help.github.com/pull-requests/
 [g5]: http://schacon.github.com/git/gitattributes.html
+
+
+From https://stackoverflow.com/questions/19411981/images-corrupt-after-git-push
+
+running git check-attr --all -- path/to/png before and after adding the new gitattributes showed that the image file was originally treated as a text file, and now it's binary (note I had to commit/push the .gitattributes file for it to take effect on remote)
